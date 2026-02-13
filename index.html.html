@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Ramadhan Santri Al Risalah</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f7f4; margin: 0; padding: 20px; }
+        .container { max-width: 500px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin: auto; }
+        
+        .logo-container { text-align: center; margin-bottom: 15px; }
+        .logo-container img { max-width: 100px; height: auto; }
+
+        h2 { color: #2d5a27; text-align: center; margin-bottom: 5px; margin-top: 0; }
+        
+        /* Nama Kelas di bawah judul */
+        .nama-kelas-header { 
+            text-align: center; 
+            color: #2d5a27; 
+            font-size: 1.5em; 
+            font-weight: 800; 
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .sub-title { text-align: center; color: #666; margin-bottom: 25px; font-size: 0.9em; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; color: #333; }
+        
+        input[type="text"], select, textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 14px; font-family: inherit;
+        }
+        
+        textarea { resize: vertical; min-height: 80px; }
+
+        .checkbox-group { background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #eee; }
+        .checkbox-item { margin-bottom: 12px; display: flex; align-items: center; cursor: pointer; font-size: 14px; }
+        .checkbox-item input { margin-right: 12px; width: 18px; height: 18px; cursor: pointer; }
+        
+        button { width: 100%; padding: 14px; background-color: #2d5a27; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; transition: 0.3s; margin-top: 10px; }
+        button:hover { background-color: #1e3d1a; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+        button:disabled { background-color: #ccc; cursor: not-allowed; }
+        
+        .footer-note { text-align: center; color: #888; font-size: 0.85em; margin-top: 10px; font-style: italic; }
+        #statusMessage { margin-top: 15px; text-align: center; font-weight: bold; padding: 10px; border-radius: 5px; display: none; }
+       
+       .social-footer {
+            max-width: 500px;
+            margin: 30px auto 50px auto;
+            text-align: center;
+        }
+        .social-title-footer {
+            font-size: 0.85em;
+            color: #2d5a27; 
+            margin-bottom: 18px;
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        .social-icons-footer {
+            display: flex;
+            justify-content: center;
+            gap: 25px; 
+            flex-wrap: wrap;
+        }
+        .social-icons-footer a {
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .social-icons-footer a:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+        .social-icons-footer img {
+            width: 38px; 
+            height: 38px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo-container">
+        <img src="logo.png.webp" alt="Logo Al Risalah">
+    </div>
+
+    <h2>🌙 Jurnal Ramadhan Risalah</h2>
+    <div class="nama-kelas-header">KELAS 2C WUSTHA</div>
+    <p class="sub-title">Laporan Kegiatan Santri al Risalah Selama Liburan</p>
+    
+    <form id="ramadhanForm">
+        <input type="hidden" name="kelas" value="1A Wustha">
+<div class="form-group">
+    <label>Nama Lengkap Santri:</label>
+    <select name="nama" required>
+        <option value="">-- Pilih Nama Anak --</option>
+        <option value="Muh. Idham Ibnu I">Muh. Idham Ibnu I</option>
+        <option value="Muh. Syam">Muh. Syam</option>
+        <option value="Afsal Murtazah">Afsal Murtazah</option>
+        <option value="Dedy Saputra">Dedy Saputra</option>
+        <option value="M. Taslim">M. Taslim</option>
+        <option value="Muh. Said">Muh. Said</option>
+        <option value="Ahmad Fahmi">Ahmad Fahmi</option>
+        <option value="Muh. Azka Haufal Ar Rahman">Muh. Azka Haufal Ar Rahman</option>
+        <option value="Muh. Istiqlal">Muh. Istiqlal</option>
+        <option value="M. Yasril">M. Yasril</option>
+        <option value="Syafiq Tabarak">Syafiq Tabarak</option>
+        <option value="Muh. Faiz">Muh. Faiz</option>
+        <option value="Dede Saputra">Dede Saputra</option>
+        <option value="Ulma Dwifatonah">Ulma Dwifatonah</option>
+        <option value="Ihsan Ali Fauzi">Ihsan Ali Fauzi</option>
+        <option value="Muh. Ridwan">Muh. Ridwan</option>
+        <option value="Muhammad Zubair">Muhammad Zubair</option>
+        <option value="Muhammad Alif Daffa">Muhammad Alif Daffa</option>
+        <option value="Muh. Aidil Adha">Muh. Aidil Adha</option>
+        <option value="Muhammad Fathir Al Faruq">Muhammad Fathir Al Faruq</option>
+        <option value="Muh. Fadlur Rahman">Muh. Fadlur Rahman</option>
+        <option value="Muhammad Syarif">Muhammad Syarif</option>
+        <option value="Ahmad Abid Asim">Ahmad Abid Asim</option>
+        <option value="Fuad Lailatul Luthfi">Fuad Lailatul Luthfi</option>
+        <option value="Muhammad Aril">Muhammad Aril</option>
+        <option value="Muhammad Alif sahabuddin">Muhammad Alif sahabuddin</option>
+        <option value="Iklil Nabhan Mungaran. T">Iklil Nabhan Mungaran. T</option>
+        <option value="Muhammad Iqbal">Muhammad Iqbal</option>
+        <option value="Muhammad Fauzan">Muhammad Fauzan</option>
+        <option value="Fathur Rahman">Fathur Rahman</option>
+        <option value="Yusuf Ibrah">Yusuf Ibrah</option>
+        <option value="Muh. Manna Hasbih">Muh. Manna Hasbih</option>
+        <option value="Fayyadh Nashirul. A">Fayyadh Nashirul. A</option>
+        <option value="Muh. Iswar">Muh. Iswar</option>
+        <option value="M. Haerul">M. Haerul</option>
+        <option value="Muhammad Fahri">Muhammad Fahri</option>
+        <option value="Muhammad Aslan">Muhammad Aslan</option>
+        <option value="Muh. Fatur Rahman">Muh. Fatur Rahman</option>
+        <option value="Is`adul Rifqi">Is`adul Rifqi</option>
+        <option value="Muhammada Irfan Dimas">Muhammada Irfan Dimas</option>
+        <option value="Athir Athaillah">Athir Athaillah</option>
+        <option value="Abid Zar Ilham">Abid Zar Ilham</option>
+        <option value="Ambasador Sac. GF">Ambasador Sac. GF</option>
+        <option value="Muh. Rahman">Muh. Rahman</option>
+        <option value="Sulaiman">Sulaiman</option>
+        <option value="Muh. Sya'ban Ali Ramadhan">Muh. Sya'ban Ali Ramadhan</option>
+        <option value="M. Ikrom">M. Ikrom</option>
+        <option value="Muhammad Ihsan">Muhammad Ihsan</option>
+    </select>
+</div>
+<div class="form-group">
+    <label>Nama Lengkap Santri:</label>
+    <select name="nama" required>
+        <option value="">-- Pilih Nama Anak --</option>
+        <option value="Muhammad Nuranggana">Muhammad Nuranggana</option>
+        <option value="Muh. Sultan">Muh. Sultan</option>
+        <option value="Ahmad Assegaf">Ahmad Assegaf</option>
+        <option value="Muhammad Nasrul">Muhammad Nasrul</option>
+        <option value="Fadlu Rahman">Fadlu Rahman</option>
+        <option value="Tasman">Tasman</option>
+        <option value="Muh. Iftahillah">Muh. Iftahillah</option>
+        <option value="Alfin Saputra Ganesa">Alfin Saputra Ganesa</option>
+        <option value="M. Al-Ghasali Sya'ban">M. Al-Ghasali Sya'ban</option>
+        <option value="M. Risal">M. Risal</option>
+        <option value="Muh. Arya Wijaya.H">Muh. Arya Wijaya.H</option>
+        <option value="Enji">Enji</option>
+        <option value="Muh. Aswad">Muh. Aswad</option>
+        <option value="Muhammad Difar">Muhammad Difar</option>
+        <option value="Muhammad Ridho Dafas">Muhammad Ridho Dafas</option>
+        <option value="Muh. Faruq Syarif">Muh. Faruq Syarif</option>
+        <option value="Aiman Ali Fitra">Aiman Ali Fitra</option>
+        <option value="Muhammad Fadil">Muhammad Fadil</option>
+        <option value="Ahmad Alwi Arizandi">Ahmad Alwi Arizandi</option>
+        <option value="Fikri">Fikri</option>
+    </select>
+</div>
+</div>bbbbbb
+
+        <div class="form-group">
+            <label>Kegiatan Hari Ini:</label>
+            <div class="checkbox-group">
+                <label class="checkbox-item"><input type="checkbox" name="kegiatan" value="Shalat 5 Waktu"> Shalat Berjamaah 5 Waktu</label>
+                <label class="checkbox-item"><input type="checkbox" name="kegiatan" value="Tadarus"> Tadarus Al-Quran</label>
+                <label class="checkbox-item"><input type="checkbox" name="kegiatan" value="Ceramah"> Mengikuti Ceramah</label>
+                <label class="checkbox-item"><input type="checkbox" name="kegiatan" value="Muadzin"> Menjadi Muadzin</label>
+                <label class="checkbox-item"><input type="checkbox" name="kegiatan" value="Bantu Orang Tua"> Membantu Orang Tua</label>
+                <label class="checkbox-item"><input type="checkbox" name="kegiatan" value="Tarawih"> Shalat Tarawih</label>
+                <label class="checkbox-item"><input type="checkbox" name="kegiatan" value="Lomba"> Mengikuti Lomba</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Link Video Ceramah (Sosial Media/Drive):</label>
+            <input type="text" name="bukti" placeholder="https://www.tiktok.com/p/... atau link Drive">
+            <p style="font-size: 0.8em; color: #555; margin-top: 5px; line-height: 1.4;">
+                💡 <b>Tips:</b> Upload video ke facebook/TikTok/Drive, klik 'Bagikan', lalu pilih 'Salin Tautan' dan tempel di sini.
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label>Catatan Orang Tua (Opsional):</label>
+            <textarea name="catatan" placeholder="Ceritakan di sini jika ada perilaku santri yang kurang baik atau perlu diperhatikan selama di rumah..."></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">Kirim Laporan</button>
+        <p class="footer-note">* Semua yang anda isi akan kami tanggapi</p>
+    </form>
+    <div id="statusMessage"></div>
+</div>
+
+<div class="social-footer">
+    <span class="social-title-footer">klik icon dan ikuti Sosial Al Risalah!</span>
+    <div class="social-icons-footer">
+        <a href="https://facebook.com/PILIH_USER_NAME" target="_blank" title="Facebook">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        
+        <a href="https://instagram.com/PILIH_USER_NAME" target="_blank" title="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+        </a>
+        
+        <a href="https://www.tiktok.com/@PILIH_USER_NAME" target="_blank" title="TikTok">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+        </a>
+
+        <a href="https://www.youtube.com/@PILIH_USER_NAME" target="_blank" title="YouTube">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        </a>
+    </div>
+</div>
+
+<script>
+    const form = document.getElementById('ramadhanForm');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwaQ0qvbXX-OBJv4RV8rBKRLSaVRwIpIBGtZfDWYh9u8da-vveD6l9wEyBRZLM_oLNoHA/exec';
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = document.getElementById('submitBtn');
+        const status = document.getElementById('statusMessage');
+        
+        btn.disabled = true;
+        btn.innerText = "Sedang Mengirim...";
+        status.style.display = "none";
+
+        const formData = new FormData(form);
+        const outData = new URLSearchParams();
+        
+        let kegiatanArr = [];
+        for (let [key, value] of formData.entries()) {
+            if (key === 'kegiatan') {
+                kegiatanArr.push(value);
+            } else {
+                outData.append(key, value);
+            }
+        }
+        outData.append('kegiatan', kegiatanArr.join(', '));
+
+        fetch(scriptURL, { 
+            method: 'POST', 
+            mode: 'no-cors', 
+            body: outData 
+        })
+        .then(() => {
+            status.style.display = "block";
+            status.innerHTML = "✅ Alhamdulillah! Laporan berhasil disimpan.";
+            status.style.color = "#2d5a27";
+            status.style.backgroundColor = "#e8f5e9";
+            form.reset();
+            btn.disabled = false;
+            btn.innerText = "Kirim Laporan";
+        })
+        .catch(error => {
+            console.error('Error!', error);
+            status.style.display = "block";
+            status.innerHTML = "❌ Terjadi kesalahan jaringan. Coba lagi.";
+            btn.disabled = false;
+            btn.innerText = "Coba Lagi";
+        });
+    });
+</script>
+</body>
+</html>
